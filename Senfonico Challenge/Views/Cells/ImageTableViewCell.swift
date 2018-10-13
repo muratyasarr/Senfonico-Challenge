@@ -21,5 +21,6 @@ class ImageTableViewCell: UITableViewCell {
         super.prepareForReuse()
         imageTitleLabel.text = nil
         flickerImageView.image = nil
+        UIImageView.currentTask.cancel()
     }
 }

@@ -117,7 +117,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRJ-yV-FNr" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xBY-MN-fKp">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xBY-MN-fKp">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                             </imageView>
                                         </subviews>
@@ -149,6 +149,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tgu-Zb-FAT"/>
                     </view>
+                    <connections>
+                        <outlet property="flickerImageView" destination="xBY-MN-fKp" id="7ic-4W-Y5f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHc-EO-1OY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

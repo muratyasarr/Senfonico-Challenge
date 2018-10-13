@@ -68,7 +68,7 @@ extension ImageListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let image = images[indexPath.row]
         guard let imageDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: String(describing: ImageDetailsViewController.self)) as? ImageDetailsViewController else { return }
-        imageDetailsVC.imageURL = image.urlString
+        imageDetailsVC.imageURLString = image.urlString
         self.navigationController?.pushViewController(imageDetailsVC, animated: true)
     }
 }

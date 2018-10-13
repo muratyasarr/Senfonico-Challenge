@@ -9,6 +9,9 @@
 import UIKit
 
 extension UIImageView {
+    private static var urlString: String = ""
+    static var currentTask: URLSessionDataTask = URLSessionDataTask()
+    
     func loadImage(withURL url: URL) {
         if let image = ImageCache.shared.image(forKey: url.absoluteString) {
             DispatchQueue.main.async {
@@ -16,7 +19,7 @@ extension UIImageView {
             }
             return
         }
-        URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
+        let task = URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
             guard let data = data, error == nil else { return }
             if let image = UIImage(data: data) {
                 DispatchQueue.main.async {
@@ -24,6 +27,8 @@ extension UIImageView {
                 }
                 ImageCache.shared.save(image: image, forKey: url.absoluteString)
             }
-        }.resume()
+        }
+        UIImageView.currentTask = task
+        task.resume()
     }
 }

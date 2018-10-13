@@ -11,12 +11,15 @@ import UIKit
 class ImageDetailsViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var flickerImageView: UIImageView!
     
-    var imageURL: String?
+    var imageURLString: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if let imageURLString = imageURLString, let url = URL(string: imageURLString) {
+            flickerImageView.loadImage(withURL: url)
+        }
     }
 
 }
