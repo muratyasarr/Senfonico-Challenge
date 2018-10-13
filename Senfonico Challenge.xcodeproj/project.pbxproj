@@ -12,6 +12,9 @@
 		AC0C81BA2171F785009981D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0C81B82171F785009981D2 /* Main.storyboard */; };
 		AC0C81BC2171F787009981D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0C81BB2171F787009981D2 /* Assets.xcassets */; };
 		AC0C81BF2171F787009981D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0C81BD2171F787009981D2 /* LaunchScreen.storyboard */; };
+		AC0C81CE217208F9009981D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0C81CD217208F9009981D2 /* NetworkManager.swift */; };
+		AC0C81D021722701009981D2 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0C81CF21722701009981D2 /* Image.swift */; };
+		AC0C81D221724353009981D2 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0C81D121724353009981D2 /* ImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		AC0C81BB2171F787009981D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC0C81BE2171F787009981D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC0C81C02171F787009981D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0C81CD217208F9009981D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AC0C81CF21722701009981D2 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		AC0C81D121724353009981D2 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,72 @@
 			isa = PBXGroup;
 			children = (
 				AC0C81B42171F784009981D2 /* AppDelegate.swift */,
-				AC0C81B62171F784009981D2 /* ViewController.swift */,
-				AC0C81B82171F785009981D2 /* Main.storyboard */,
-				AC0C81BB2171F787009981D2 /* Assets.xcassets */,
-				AC0C81BD2171F787009981D2 /* LaunchScreen.storyboard */,
-				AC0C81C02171F787009981D2 /* Info.plist */,
+				AC0C81C821720857009981D2 /* Models */,
+				AC0C81C92172085B009981D2 /* Views */,
+				AC0C81C721720847009981D2 /* View Controllers */,
+				AC0C81C62172083D009981D2 /* Managers */,
+				AC0C81CA21720870009981D2 /* Utilities */,
+				AC0C81CB2172088E009981D2 /* Storyboards */,
+				AC0C81CC217208A9009981D2 /* Supporting Files */,
 			);
 			path = "Senfonico Challenge";
+			sourceTree = "<group>";
+		};
+		AC0C81C62172083D009981D2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AC0C81CD217208F9009981D2 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		AC0C81C721720847009981D2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC0C81B62171F784009981D2 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AC0C81C821720857009981D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC0C81CF21722701009981D2 /* Image.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC0C81C92172085B009981D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC0C81D121724353009981D2 /* ImageTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC0C81CA21720870009981D2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AC0C81CB2172088E009981D2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AC0C81B82171F785009981D2 /* Main.storyboard */,
+				AC0C81BD2171F787009981D2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AC0C81CC217208A9009981D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC0C81BB2171F787009981D2 /* Assets.xcassets */,
+				AC0C81C02171F787009981D2 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0C81CE217208F9009981D2 /* NetworkManager.swift in Sources */,
+				AC0C81D021722701009981D2 /* Image.swift in Sources */,
+				AC0C81D221724353009981D2 /* ImageTableViewCell.swift in Sources */,
 				AC0C81B72171F784009981D2 /* ViewController.swift in Sources */,
 				AC0C81B52171F784009981D2 /* AppDelegate.swift in Sources */,
 			);
@@ -283,7 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Senfonico Challenge/Info.plist";
+				INFOPLIST_FILE = "Senfonico Challenge/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Senfonico Challenge/Info.plist";
+				INFOPLIST_FILE = "Senfonico Challenge/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
