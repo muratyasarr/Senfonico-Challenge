@@ -39,9 +39,8 @@ class ImageListViewController: UIViewController {
             switch result {
             case .success(let flickerServerResponse):
                 self?.images = flickerServerResponse.photos?.photo?.filter({$0.urlString != nil }) ?? []
-                print("successss")
             case .error(let error):
-                print("errorr: \(error.localizedDescription)")
+                print("error: \(error.localizedDescription)")
             }
         }
     }

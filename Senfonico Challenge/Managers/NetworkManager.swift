@@ -134,7 +134,7 @@ extension ImagesEndpoint: Endpoint {
         case .all:
             return [
                 URLQueryItem(name: "method", value: "flickr.galleries.getPhotos"),
-                URLQueryItem(name: "gallery_id", value: "66911286-72157647277042064"),
+                URLQueryItem(name: "gallery_id", value: "72157621980433950"),
                 URLQueryItem(name: "format", value: "json"),
                 URLQueryItem(name: "nojsoncallback", value: "1"),
                 URLQueryItem(name: "api_key", value: "b05a2762ecc0851ca51abcaed20c9b30"),

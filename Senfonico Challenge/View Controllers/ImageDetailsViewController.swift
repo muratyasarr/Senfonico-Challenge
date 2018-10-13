@@ -10,7 +10,6 @@ import UIKit
 
 class ImageDetailsViewController: UIViewController {
     
-    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var flickerImageView: UIImageView!
     
     var imageURLString: String?
